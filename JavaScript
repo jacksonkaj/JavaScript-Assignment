@@ -1,0 +1,61 @@
+Q1.
+
+var MyObject = {
+   Name: "Dima",
+   age: 50,
+  Hair: "Brown",
+
+};
+Q2.
+
+var myObject = {
+   Name:"Dima",
+  age: 50,
+  Hair: "Brown",
+  getName: function () {
+    return this.Name ;
+  }
+}
+myObject.getName();
+
+Q3.
+var MyArray = [1,2,3,4,5];
+
+Q4.
+var txt = "";
+var MyArray =  [1,2,3,4,5];
+MyArray.forEach(myFunction);
+
+function myFunction(MyArray[0], MyArray[1], MyArray[2],MyArray[3], MyArray[4]   ) {
+  txt = txt + MyArray+ "<br>"; 
+}
+
+Q5.
+
+function multpleNumber(){
+		
+		 for (var x=1; x <= 100; x++){
+			  if(!((x % 3 ==0&& x % 5 ==0) ||( x % 3 == 0 ) || (x % 5 == 0))) {
+				  document.write(x);
+				  document.write('<br>');
+			  }
+			 
+			  if( x % 3 == 0 && ! (x % 5 == 0) ) {
+            document.write("Fizz");
+		
+			document.write('<br>');
+        }
+		
+		  if( x % 5 == 0 && !(x % 3 == 0)) {
+            document.write("Buzz");
+			document.write('<br>');
+        }
+		
+    if( x % 3 ==0 &&  x % 5 ==0) {
+        document.write("FizzBuzz");
+		document.write('<br>');
+    } 
+       
+
+		 }
+	  }
